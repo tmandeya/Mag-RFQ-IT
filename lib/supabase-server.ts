@@ -23,7 +23,6 @@ export async function createClient() {
   )
 }
 
-// Server-side supplier client with token
 export async function createSupplierServerClient(token: string) {
   const cookieStore = await cookies()
   return createServerClient(
